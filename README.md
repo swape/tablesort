@@ -5,12 +5,12 @@ Making tables nice and clean and sortable.
 This script sorts numbers in the right order.
 
 If you use table for design a page then you should not use this or anything within the web.
-... but if you do it right and do not use table for design and only for listing thing (the correct way of using tables), then you can use this.
+... but if you do it right and do not use table for design and only for listing things (the correct way of using tables), then you can use this.
 
 just include the latest jQuery (1.9+) and the css and js files
-add you are good to go.
+and you are good to go.
 
-if you have load the table dynamicly to the page with ajax then you can call tableSorter(); like this:
+if you have loaded the table dynamicly to the page with ajax then you can call tableSorter(); like this:
 
 jQuery(function($){
 	tableSorter();
