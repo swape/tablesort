@@ -16,7 +16,7 @@ jQuery(function($){
 	tableSorter();
 });
 
-I have added the Norwegian letters (ÆØÅ) in the right sorting order. If need to add more or re-order the deafult sort order, then add it to this array:
+I have added the Norwegian letters (ÆØÅ) in the right sorting order. If you need to add more or re-order the deafult sort order, then add it to this array:
 
 var arrSc = {"Æ":"X1", "Ø":"X2" ,"Å": "X3"};// adding non sortable signs after X
 
