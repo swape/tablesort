@@ -1,18 +1,76 @@
-table a{font-weight:bold;text-decoration:none}
-table{width:100%;font-family:Arial, Helvetica, sans-serif;color:#666;font-size:12px;text-shadow:1px 1px 0 #fff;background:#eaebec;margin:10px auto;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 2px #d1d1d1;border-spacing:0}
-table th{padding:21px 25px 22px 25px;border-top:1px solid #fafafa;border-bottom:1px solid #e0e0e0;background:#ededed;background:-webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));background:-moz-linear-gradient(top, #ededed, #ebebeb)}
-table th:first-child{text-align:left;padding-left:20px}
-table tr:first-child th:first-child{border-top-left-radius:3px}
-table tr:first-child th:last-child{border-top-right-radius:3px}
-table tr{text-align:center;padding-left:20px}
-table tbody tr td:first-child{text-align:left;padding-left:20px;border-left:0}
-table tbody tr td{text-align:left;padding:10px;border-top:1px solid #ffffff;border-bottom:1px solid #e0e0e0;border-left:1px solid #e0e0e0;background:#fafafa;background:-webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));background:-moz-linear-gradient(top, #fbfbfb, #fafafa)}
-table tbody tr:nth-of-type(odd) td{background:#f6f6f6;background:-webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));background:-moz-linear-gradient(top, #f8f8f8, #f6f6f6)}
-table tr:last-child td{border-bottom:0}
-table tr:last-child td:first-child{border-bottom-left-radius:3px}
-table tr:last-child td:last-child{border-bottom-right-radius:3px}
-table tbody tr:hover td{background:#f2f2f2;background:-webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));background:-moz-linear-gradient(top, #f2f2f2, #f0f0f0)}
-table th{cursor:ns-resize}
-table th.sortdes{cursor:n-resize;box-shadow:0 5px 5px rgba(0,0,0,0.1) inset }
-table th.sortasc{cursor:s-resize;box-shadow:0 -5px 5px rgba(0,0,0,0.1) inset }
-table tfoot td{background-color:#DDD;padding:10px;border-top:1px solid #AAA}
+
+table {
+	font-family:sans-serif;
+	color: #666;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.7);
+	background: #eaebec;
+	margin: 10px auto;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 3px #d1d1d1;
+	border-spacing: 0
+}
+table th {
+	padding:1.1em;
+	background: #ededed;
+	background: linear-gradient(#ededed, #e6e6e6);
+	
+}
+
+th::selection { background: transparent; }
+th::-moz-selection { background: transparent; }
+
+table th:first-child {
+	text-align: left;
+	padding-left: 20px
+}
+table tr {
+	text-align: center;
+}
+table tbody tr td:first-child {
+	text-align: left;
+	padding-left: 20px;
+	border-left: 0
+}
+table tbody tr td {
+	text-align: left;
+	padding: 5px 10px;
+	font-size:0.8em;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	background: #fafafa;
+	background: linear-gradient(#fbfbfb, #fafafa);
+}
+table tbody tr:nth-of-type(odd) td {
+	background: #f6f6f6;
+	background: linear-gradient(#f8f8f8, #f6f6f6);
+}
+table tr:last-child td {
+	border-bottom: 0
+}
+table tr:last-child td:first-child {
+	border-bottom-left-radius: 5px
+}
+table tr:last-child td:last-child {
+	border-bottom-right-radius: 5px
+}
+table tbody tr:hover td {
+	background: #f2f2f2;
+	background: linear-gradient(#f2f2f2, #f0f0f0);
+}
+table th {
+	cursor: ns-resize
+}
+table th.sortdes {
+	cursor: n-resize;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.6) inset
+}
+table th.sortasc {
+	cursor: s-resize;
+	box-shadow: 0 -3px rgba(0, 0, 0, 0.6) inset
+}
+table tfoot td {
+	background-color: #DDD;
+	padding: 10px;
+	border-top: 1px solid #AAA
+}
